@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		{% if title %}
 		<title>{{ title }}</title>
-		{% else %}
-		<title>Home</title>
-		{% endif %}
 	</head>
 
 	<body>
@@ -19,11 +15,6 @@
 		{% endif %}
 		{% endwith %}
 
-		<div>
-			<p>My Homepage</p>
-			<a href="/">Home</a>
-			<a href="/login">Login</a>
-		</div>
 		{% block content %}{% endblock %}
 	</body>
 </html>

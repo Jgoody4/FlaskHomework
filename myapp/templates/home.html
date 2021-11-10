@@ -6,12 +6,14 @@
 </head>
 <h1>Welcome {{name}}, here are top destinations! </h1>
 <a href="https://www.google.com">goooogle</a>
+{% for cities in top_cities %}
 <div>
+
 	<ul>
-		<li>{{ city }}</li>
+		<li>{{ cities }}</li>
 	</ul>
 </div>
-
+{% endfor %}
 <form action="" method="POST" nonvalidate>
 	{{ form.hidden_tag() }}
 	<p>
